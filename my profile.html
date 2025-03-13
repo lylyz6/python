@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iz6's Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* CSS 样式 */
+        :root {
+            --primary: #6366f1;
+            --secondary: #8b5cf6;
+            --background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--background);
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #334155;
+        }
+
+        .hero {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            text-align: center;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: 6rem;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .social-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 1.5rem;
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 50px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            gap: 0.5rem;
+        }
+
+        .social-button:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .page-content {
+            padding: 0 1rem;
+        }
+
+        .card-grid {
+            display: grid;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: -6rem auto 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            border-bottom: 2px solid #e0e7ff;
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .profile-list {
+            list-style: none;
+            padding-left: 1rem;
+        }
+
+        .profile-list li {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #e0e7ff;
+        }
+
+.collab img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-height: 300px !important;
+    object-fit: cover !important;
+}
+
+        #小本本 {
+            background: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+        }
+
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 2rem 1rem;
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+            .hero-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* 自定义B站图标 */
+        .fa-bilibili:before {
+            content: "B";
+            font-family: sans-serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <img src="./image/iz6.jpg" alt="hoshino" class="hero-avatar">
+            <h1 class="hero-title">iz6</h1>
+            <div class="hero-links">
+                <a href="https://space.bilibili.com/11602137" class="social-button">
+                    <i class="fab fa-bilibili"></i> Bilibili
+                </a>
+                <a href="https://osu.ppy.sh/users/26093361" class="social-button">
+                    <i class="fas fa-gamepad"></i> osu!
+                </a>
+                <a href="./content.html" class="social-button">
+                    <i class="fas fa-box-open"></i> 资源小站
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="card-grid">
+            <article class="card">
+                <h2>ME!</h2>
+                <div id="ME">
+                    <ul class="profile-list">
+                        <li>
+                            <p>菜，努力进化ing~<br>Wacom CTL 472（65*45）+ Drunkdeer G65 & Wooting uwu(lekker L60)</p>
+                        </li>
+                        <li>
+                            <h3>小本本</h3>
+                            <div id="小本本">
+                                <p id="简介">
+                                2022.4.29 1443pp(唯一可考) <br>
+                                8.25 1849pp <br>
+                                2023.4.26 2kpp<br>
+                                5.29 3kpp<br>
+                                6.18 4kpp<br>
+                                8.5 5kpp<br>
+                                9.8 remake ban HD<br>
+                                9.15 跳不动了，缩小映射<br>
+                                9.22 又调回来了<br>
+                                9.25 48.65*35 ，再调是sb<br>
+                                9.26 发现把手臂搭在扶手上稳定性明显增强<br>
+                                9.28 我是sb,已调回屏幕比例映射<br>
+                                10.14 长达一个月的折磨，换板ctl 472 53*35<br>
+                                10.21 微调 51*35<br>
+                                10.22 第一个300pp！<br>
+                                11.5 尝试去读引导线，no mod以及hr读图容易一些了<br>
+                                12.23 6k pp<br>
+                                2024.1.4 食指的键轴换成了触发压力更大的L60<br>
+                                1.11 光标加了拖尾，aim增强<br>
+                                1.16 1000h 游戏时间<br>
+                                1.18 手肘往后挪让扶手支撑更多的发力，打串的感觉好多了<br>
+                                1.21 回家，好冷打不动，afk<br>
+                                2.1 江浦烂了，但是可以练flow？<br>
+                                2.18 打flow要看准串头和移动方向<br>
+                                2.29 新屏幕 2k240hz<br>
+                                3.5 右手移动不能只用手指操控移动，需要倾斜依靠手腕发力移动提高稳定性<br>
+                                3.15 板子向右移动，让手臂垂直伸进桌面，板子向右倾斜10°，映射调整:55*37.7<br>
+                                3.16 了解磁轴真正用法，不同bpm更改按下的高度，手速明显提升<br>
+                                3.17 左右手分离读图，读完图后左手自然的稳定一定高度按键，然后专注于右手移动<br>
+                                3.19 换触盘 wooting uwu<br>
+                                3.20 7k pp & 第一个400pp<br>
+                                5.9 映射调大 65*45<br>
+                                5.19 读图读数字，aim更准节奏更好把控<br>
+                                7.2 afk(玩兰斯去了)归来，功力大增(flow)<br>
+                                7.5 第一个7星FC！<br>
+                                7.12 手速耐力飞升<br>
+                                7.17 8k pp<br>
+                                7.19 改映射 55*38<br>
+                                8.3 新键盘 Drunkdeer G65<br>
+                                10.27 first 500pp<br>
+                                11.28 好想要aim<br>
+                            </p>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>Tournaments</h3>
+                            <ul class="profile-list">
+                                <li>YHC S3 6th 2023.6</li>
+                            <li>ZKFC S2 6th 2023.9</li>
+                            <li>ARC S1 3rd 2024.1</li>
+                            <li>FST S1 1st 2024.2</li>
+                            <li>ARC S2 3rd 2024.10</li>
+                            <li>FRDT 2nd 2024.11</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>collab</h3>
+                            <div class="collab">
+                                <h4>海参群第一次collab</h4>
+                                <img src="./image/海参群第一次collab.png" alt="erro">
+                            </div>
+                            <div id="coconut">
+                                <h4>椰子</h4>
+                                <div id="collab2">
+                                    <img src="./image/和椰子sp.png" alt="erro" >
+                                </div>
+                                <div id="collab1">
+                                    <img src="./image/和椰子灵感溢满的甜蜜创想.png" alt="erro" ">
+                                </div>
+                                <div id="collab3">
+                                    <img src="./image/和椰子clover days2.png" alt="erro">
+                                    <img src="./image/和椰子clover days.png" alt="erro">
+                                </div>
+                            </div>
+                            <div class="collab">
+                                <h4>海参群第二次collab</h4>
+                                <img src="./image/海参群第二次collab.png" alt="erro" width="500">
+                            </div>
+                            <div class="collab">
+                                <h4>ARC S2</h4>
+                                <img src="./image/arc 2024.png" alt="erro" width="500">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="card">
+                <h2>bplist</h2>
+                <div id="bplist">
+                    <ul class="profile-list">  
+                        <li><a href="https://osu.ppy.sh/beatmapsets/1837608#osu/3927817">Dawn of the Dragonstar by Twilight Force</a>&nbsp;&nbsp;&nbsp;489pp</li>
+                    <li><a href="https://osu.ppy.sh/beatmapsets/2091512#osu/4628575">Snow Goose by Mutsuhiko Izumi</a>&nbsp;&nbsp;&nbsp;473pp</li>
+                    <li><a href="https://osu.ppy.sh/beatmapsets/838182#osu/1754777">Sidetracked Day by VINXIS</a>&nbsp;&nbsp;&nbsp;462pp</li>
+                    <li><a href="https://osu.ppy.sh/beatmapsets/594170#osu/1256809">Save Me by Avenged Sevenfold</a>&nbsp;&nbsp;&nbsp;459pp</li>
+                    <li><a href="https://osu.ppy.sh/beatmapsets/1151004#osu/2843416">Embraced by the Flame by UNDEAD CORPORATION</a>&nbsp;&nbsp;&nbsp;451pp</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script>
+        // 可选的交互动画
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body>
+</html>
